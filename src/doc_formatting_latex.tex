@@ -1,0 +1,40 @@
+\documentclass[twoside,12pt]{report} %to manage margin
+\usepackage[utf8]{inputenc}
+%\usepackage{fullpage} %to obtain full margin lines 
+\usepackage{geometry}
+%package for images 
+\usepackage{graphicx}
+% To  generate texts
+%\usepackage{lipsum}
+\title{Learning how to write a report}
+\author{Jonatan Dibrey}
+\date{may 25 2025}
+
+\begin{document}
+
+\chapter*{Abstract}
+this section is for abstract\\
+\chapter*{Dedication}
+This is for dedication  \\
+\chapter*{Acknowledgement}
+This is for Acknowledgement
+
+%for table of content 
+\tableofcontents
+%for list of figures
+\listoffigures
+
+%for chapters 
+\include{chapter1}
+\include{chapter2}
+\include{chapter3}
+\include{conclusions}
+\appendix
+\include{Appendix}
+
+%Adding bibliography 
+\bibliographystyle{plain}
+%if you want ieee do this:  ieeetr
+\bibliography{ref}
+
+\end{document}

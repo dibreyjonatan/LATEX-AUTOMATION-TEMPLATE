@@ -1,0 +1,143 @@
+ \documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts} %need to use /dfrac
+
+\title{ Tutorial on Latex}
+\author{ dibrey jonatan}
+\date{24 may 2025}
+
+\begin{document}
+\maketitle
+\section{introduction}
+This is my first latex document
+$$ x^2$$
+when we use \$ we are in math mode
+To create an exponent in latex use dollar sign
+$x^5$
+
+NB : double dollar sign will put the equation in a new lign and will align 
+
+To create subscripts we will have to make this 
+$$x_1$$
+$$x_{12}$$
+$$x_{1_2}$$
+$$x_{1_{2_3}}$$
+\maketitle
+\section{greek letters}
+$$\pi$$
+$$\Pi$$
+$$\alpha$$
+$$\beta$$
+$$\gamma$$
+\maketitle
+\section{Trigonometric}
+$$ y=\sin x $$
+$$ y=\cos x $$
+$$ y=\sec x $$
+$$ y=\csc x $$
+$$ y=\cot \alpha $$
+$$ y=\tan \beta $$
+\maketitle
+\section{Inverse Trigonometric functions}
+$$ y=\arcsin x $$
+$$ y=\arccos x $$
+$$ y=\arctan x$$
+$$ y=\tan^{-1} x$$
+\maketitle
+\section{log functions}
+$$y=\log x$$
+$$ y=\log_5 x $$
+$$ y=\ln x $$
+\maketitle
+\section{Roots} 
+$$\sqrt{2}$$
+To make cube roots or any other use this 
+$$\sqrt[3]{2}$$
+
+$$\sqrt{1+\sqrt{x}}$$
+\maketitle
+\section{Fractions}
+$$\frac{1}{2}$$
+$$\frac{1}{x^2+1}$$
+To produce space from one line to another you will have to use this.\\[16pt]
+So the distance is as you see.
+You can make fraction to have same size as the text in it. watch the difference
+between $\frac{1}{2}$ and $\dfrac{1}{2}$
+\maketitle
+\section{Brackets, arrays}
+$${1,2,3}$$  %using \\ will bring the text to the next line
+to print brackets do this $\{ 1,2,3 \}$ \\
+To have bracket do this $\left(  s   \right)$ \\
+To have square brackets $\left[ s \right]$ \\
+To have curle bracket do this $\left\{ s  \right\}$ \\
+To have angle do this $\left \langle  s \right\rangle $ \\
+To have absolute value $\left |  s \right | $ \\
+To print \$ sign : use the back slash \\
+To put slash at one end $\left.  \right|_{x=1}$ \\
+
+EXercice 
+to produce the equation below:\\
+$\left(\frac{1}{1+{\left(\frac {1}{1+x^2} \right)}} \right)$
+\maketitle
+\section{Tables}
+
+\begin{tabular}{|c|c|c|c|} %precise the number of columns
+    \hline
+    $x$&1&2&3 \\ \hline
+    $f(x)$&2&4&6 \\ \hline
+    
+\end{tabular}
+
+\maketitle
+\section{Arrays}
+%when you use align they are automatically in math mode
+\begin{align}
+x^2+2x+1=(x+1)^2
+\end{align}
+\begin{align}
+f(x)=sin(cos(x))
+\end{align}
+
+
+\maketitle
+\section{Lists}
+To have a an enumerated list
+\begin{enumerate}
+\item pen
+\item calculator
+\item ruler
+\end{enumerate}
+
+To have a dot list 
+\begin{itemize}
+\item pen
+\item calculator
+\item ruler
+\end{itemize}
+To have a nested list 
+\begin{enumerate}
+\item pen
+\begin{enumerate}
+\item red pen
+\item blue pen
+\item black pen
+\end{enumerate}
+\item calculator
+\begin{itemize}
+\item calcio
+\item phone calc
+
+\end{itemize}
+\item ruler
+\end{enumerate}
+\begin{enumerate} %to remove the list numbering
+\item[] pen
+\item[] calculator
+\item[] ruler
+\end{enumerate}
+\begin{enumerate} %to personalise 
+\item[one] pen
+\item[two] calculator
+\item[three] ruler
+\end{enumerate}
+\end{document}
